@@ -1,0 +1,44 @@
+# ==============================================================
+#  LLM Security Gateway - Configuration
+#  Student: Muhammad Shoaib Ahmed | FA24-BCS-044
+#  Edit thresholds here without touching any code
+# ==============================================================
+
+injection:
+  # Rule-based thresholds
+  rule_block_threshold: 0.70
+  rule_warn_threshold:  0.40
+  # Semantic/ML thresholds
+  semantic_block_threshold: 0.75
+  # Hybrid final_risk threshold (combines both)
+  hybrid_block_threshold: 0.60
+  # Weights for combining scores
+  weight_rule:     0.45
+  weight_semantic: 0.55
+
+pii:
+  confidence_threshold: 0.60
+
+policy:
+  # Default mode: allow | mask | block
+  mode: mask
+  # Extra risk added when PII is found
+  pii_weight: 0.15
+  # Extra risk for secret entities (API keys)
+  secret_weight: 0.20
+
+server:
+  max_input_length: 2000
+  host: "0.0.0.0"
+  port: 8000
+
+logging:
+  audit_log_file: "results/audit_log.jsonl"
+  level: "INFO"
+
+supported_languages:
+  - en   # English
+  - ur   # Urdu
+  - ko   # Korean
+  - hi   # Hindi
+  - ar   # Arabic

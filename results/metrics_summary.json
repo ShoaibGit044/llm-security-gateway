@@ -1,0 +1,18 @@
+{
+  "total_evaluated": 151,
+  "correct": 133,
+  "accuracy_pct": 88.08,
+  "true_positives": 72,
+  "true_negatives": 61,
+  "false_positives": 18,
+  "false_negatives": 0,
+  "precision_pct": 80.0,
+  "recall_pct": 100.0,
+  "f1_score": 88.89,
+  "latency": {
+    "mean_ms": 14.799,
+    "median_ms": 3.725,
+    "p95_ms": 49.695,
+    "max_ms": 294.041
+  }
+}

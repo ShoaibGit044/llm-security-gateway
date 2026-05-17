@@ -1,0 +1,30 @@
+# LLM Security Gateway — Lab Final
+# FA24-BCS-044 | Muhammad Shoaib Ahmed | CSC 262
+
+# API framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.7.4
+
+# ML / Semantic detection
+scikit-learn==1.5.2
+numpy>=1.24.0
+
+# PII detection and anonymization
+presidio-analyzer==2.2.354
+presidio-anonymizer==2.2.354
+
+# Language detection
+langdetect==1.0.9
+
+# Translation (multilingual support)
+deep-translator==1.11.4
+
+# Configuration
+pyyaml==6.0.2
+
+# Data processing
+pandas==2.2.2
+
+# HTTP client (used by deep-translator)
+requests>=2.31.0
